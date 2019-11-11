@@ -1,10 +1,10 @@
 #ifndef QVX_TENSILETEST_H
 #define QVX_TENSILETEST_H
 
-#include "../Voxelyze/VX_Sim.h"
+#include "VX_Sim.h"
 #include "../QTUtils/QThreadWrap.h"
 #include <qwidget.h>
-#include "../Voxelyze/VXS_SimGLView.h"
+#include "VXS_SimGLView.h"
 #include <qsettings.h>
 
 //class QVX_Environment;

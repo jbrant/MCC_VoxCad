@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QDataStream>
 #include <QMessageBox>
+#include <algorithm>
 
 
 QVX_TensileTest::QVX_TensileTest()
@@ -482,7 +483,7 @@ void QVX_TensileTest::RenderMixedObject(CVX_Object* pSrcObj, CVX_Object* pDestOb
 					if (pSrcObj->GetMat(ThisInd) == 0) continue; //skip this one if it is empty (no material...
 					
 					if (ix == x && jy==y && kz == z){
-						ThisWeight = std::max(1+VoxSize/ActualMixRadius.x, std::max(1+VoxSize/ActualMixRadius.y, 1+VoxSize/ActualMixRadius.z));
+						ThisWeight = std::fmax(1+VoxSize/ActualMixRadius.x, std::fmax(1+VoxSize/ActualMixRadius.y, 1+VoxSize/ActualMixRadius.z));
 					}
 					else {
 						ThisPos = pSrcObj->GetXYZ(ThisInd);

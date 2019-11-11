@@ -8,7 +8,7 @@
 
 #include "GL/glu.h"
 
-#include "../Voxelyze/Utils/GL_Utils.h"
+#include "Utils/GL_Utils.h"
 
 #if defined(_WIN32) || defined(_WIN64) //to get fmax, fmin to work on Windows/Visual Studio
 #define fmax max

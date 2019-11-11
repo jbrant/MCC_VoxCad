@@ -1,5 +1,5 @@
 #include "QVX_Edit.h"
-#include "../Voxelyze/Utils/GL_Utils.h"
+#include "Utils/GL_Utils.h"
 #include <qgl.h>
 
 CQDM_Edit::CQDM_Edit() : QVX_Object()

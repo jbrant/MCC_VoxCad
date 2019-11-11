@@ -15,7 +15,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #define DLG_WORKSPACE_H
 
 #include "ui_vWorkSpace.h"
-#include "../Voxelyze/VX_Object.h"
+#include "VX_Object.h"
 
 
 class Dlg_Workspace : public QWidget

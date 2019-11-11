@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(Voxcad)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -15,7 +15,7 @@ include_directories(${VOXELYZE_DIR})
 # Locate the Voxelyze static library
 find_library(LIB_VOXELYZE
         NAMES Voxelyze
-        PATHS ${VOXELYZE_DIR}/cmake-build-debug)
+        PATHS ${VOXELYZE_DIR}/$ENV{VOXELYZE_BUILD_DIR})
 
 # Set OpenGL preprocessor flag
 add_definitions(-DUSE_OPEN_GL)

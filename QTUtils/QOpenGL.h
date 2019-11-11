@@ -38,7 +38,7 @@
 
 #include <qgl.h>
 #include <QTimer>
-#include "../Voxelyze/Utils/Vec3D.h"
+#include "Utils/Vec3D.h"
 
 //Predefined views
 enum ViewType {VTOP, VBOTTOM, VLEFT, VRIGHT, VFRONT, VBACK, VPERSPECTIVE}; 

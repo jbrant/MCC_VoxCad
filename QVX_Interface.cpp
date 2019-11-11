@@ -14,9 +14,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #include "QVX_Interfaces.h"
 #include <QMessageBox>
 #include <QTime>
-#include "../Voxelyze/VXS_Voxel.h"
-#include "../Voxelyze/VXS_Bond.h"
-#include "../Voxelyze/VX_MeshUtil.h"
+#include "VXS_Voxel.h"
+#include "VXS_Bond.h"
+#include "VX_MeshUtil.h"
 #include "Dlg_VideoCapture.h"
 
 #ifdef linux

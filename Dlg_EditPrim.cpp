@@ -12,8 +12,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 *******************************************************************************/
 
 #include "Dlg_EditPrim.h"
-#include "../Voxelyze/VX_FRegion.h" 
-#include "../Voxelyze/VX_Object.h"
+#include "VX_FRegion.h"
+#include "VX_Object.h"
 #include <QFileDialog>
 
 Dlg_EditPrim::Dlg_EditPrim(CVX_FRegion* pRegionIn, CVX_Object* pObjIn, QWidget *parent)

@@ -4,11 +4,11 @@
 //wraps classes with QT slots, dialog interfaces, etc:
 
 #include <QWidget>
-#include "../Voxelyze/VX_Object.h"
-#include "../Voxelyze/VX_FEA.h"
-#include "../Voxelyze/VX_Environment.h"
-#include "../Voxelyze/VX_Sim.h"
-#include "../Voxelyze/VXS_SimGLView.h"
+#include "VX_Object.h"
+#include "VX_FEA.h"
+#include "VX_Environment.h"
+#include "VX_Sim.h"
+#include "VXS_SimGLView.h"
 #include <QFileDialog>
 #include "../QTUtils/QThreadWrap.h"
 #include <qsettings.h>

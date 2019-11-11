@@ -16,7 +16,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 #include <QWidget>
 #include "Dlg_EditPrim.h"
-#include "../Voxelyze/VX_FRegion.h"
+#include "VX_FRegion.h"
 #include <QComboBox>
 
 class CVX_FRegion;
