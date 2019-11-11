@@ -401,7 +401,8 @@ void QVX_Sim::SimLoop(QString* pSimMessage)
 					"\n" + PosLabel + " X:"+ QString::number(CurSelPos.x, 'g', 3)+"  Y:"+ QString::number(CurSelPos.y, 'g', 3)+"  Z:"+ QString::number(CurSelPos.z, 'g', 3)+ " mm" +
 					"\nCoM Displacement = "+ QString::number((SS.CurCM-IniCM).Length()*1000, 'g', 3)+" mm" +
 					"\nCoM Velocity = "+ QString::number((SS.CurCM-LastCM).Length()*1000/(dt*(Count-LastCount)), 'g', 3)+" mm/s"+
-					"\nGoalFitness: " + QString::number(pow(pow(pEnv->goalLocationX-SS.CurCM.x/pEnv->pObj->GetLatticeDim(), 2)+pow(pEnv->goalLocationY-SS.CurCM.y/pEnv->pObj->GetLatticeDim(), 2),0.5),'g',3);
+					"\nGoalFitness: " + QString::number(pow(pow(pEnv->goalLocationX-SS.CurCM.x/pEnv->pObj->GetLatticeDim(), 2)+pow(pEnv->goalLocationY-SS.CurCM.y/pEnv->pObj->GetLatticeDim(), 2),0.5),'g',3) +
+                    "\nDistance: " + QString::number(GetCurDistance(), 'g', 3);
 			
 			//Boundary conditions
 			Message += "\n";
@@ -465,6 +466,7 @@ void QVX_Sim::SimLoop(QString* pSimMessage)
 		"\nCOM_Dist = "+ QString::number((SS.CurCM-IniCM).Length()*1000, 'g', 3)+" mm" +
 		"\nGoalFitness1: " + QString::number(fitness1,'g',3) +
 		"\nGoalFitness2: " + QString::number(pow(pow(pEnv->goalLocationX-SS.CurCM.x/pEnv->pObj->GetLatticeDim(), 2)+pow(pEnv->goalLocationY-SS.CurCM.y/pEnv->pObj->GetLatticeDim(), 2),0.5),'g',3) +
+		"\nDistance: " + QString::number(GetCurDistance(), 'g', 3) +
 		"\n\n";
 
 	RetMsg += "Simulation stopped.\n";
