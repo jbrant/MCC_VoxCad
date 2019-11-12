@@ -24,6 +24,8 @@ Dlg_Physics::Dlg_Physics(QVX_Sim* pSimIn, QWidget *parent)
 	ui.StopSelectCombo->addItem("None");
 	ui.StopSelectCombo->addItem("Time Steps");
 	ui.StopSelectCombo->addItem("Simulation Time");
+    ui.StopSelectCombo->addItem("Simulation Time (Goal)");
+    ui.StopSelectCombo->addItem("Simulation Time (Dist)");
 	ui.StopSelectCombo->addItem("Temperature cycles");
 	ui.StopSelectCombo->addItem("Constant Energy");
 	ui.StopSelectCombo->addItem("Kinetic Floor");
@@ -156,6 +158,8 @@ void Dlg_Physics::UpdateUI(void)
 	case SC_NONE: ui.StopValueLabel->setText(""); break;
 	case SC_MAX_TIME_STEPS: ui.StopValueLabel->setText("#"); break;
 	case SC_MAX_SIM_TIME: ui.StopValueLabel->setText("Sec"); break;
+	case SC_GOAL_MAX_SIM_TIME: ui.StopValueLabel->setText("Sec"); break;
+    case SC_DIST_MAX_SIM_TIME: ui.StopValueLabel->setText("Sec/Dist"); break;
 	case SC_TEMP_CYCLES: ui.StopValueLabel->setText("#"); break;
 	case SC_CONST_MAXENERGY: ui.StopValueLabel->setText("Avg mJ/Vox/500 ts"); break;
 	case SC_MIN_KE: ui.StopValueLabel->setText("Avg mJ/Vox/500 ts"); break;
